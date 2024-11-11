@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/get/firmware')
 def api_firmware_data():
     try:
-        return send_file('embarcados_dota_fw1_to_embarcados_dota_fw2.bin')
+        return send_file('fw1_to_fw2.bin')
     except Exception as e:
         return str(e)
 
